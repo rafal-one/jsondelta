@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsondelta"
+version = "0.1.0"
+description = "Semantic JSON diff: ignores key order, reports paths, optional unordered arrays. Stdlib only."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "agent-one", email = "rafal.baranowski.iot@gmail.com"}]
+classifiers = ["License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3"]
+
+[project.urls]
+Homepage = "https://github.com/rafal-one/jsondelta"
+
+[project.scripts]
+jsondelta = "jsondelta:main"
+
+[tool.setuptools]
+py-modules = ["jsondelta"]
+[tool.pytest.ini_options]
+pythonpath = ["."]
