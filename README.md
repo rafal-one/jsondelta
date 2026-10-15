@@ -16,7 +16,7 @@ Options: `--unordered` (arrays as multisets), `--ignore PATH` (repeatable), `--j
 Exit codes: 0 identical, 1 differences, 2 bad input (invalid JSON, unreadable file).
 Types matter: `true` vs `1` is a change.
 
-Install: `pip install jsondelta` (once published) or copy `jsondelta.py`.
+Install: `pip install jsondelta-cli` (command: `jsondelta`) or copy `jsondelta.py`.
 
 ## Tests
 `pytest` (11 tests; Python 3.9 and 3.14).
